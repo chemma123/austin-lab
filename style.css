@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #050505;
+    color: white;
+    font-family: "Press Start 2P", monospace;
+    overflow: hidden;
+}
+
+.background {
+    position: fixed;
+    inset: 0;
+    background:
+        radial-gradient(circle at top, rgba(255,46,166,.15), transparent 40%),
+        radial-gradient(circle at bottom, rgba(140,255,0,.12), transparent 40%);
+    animation: pulse 6s infinite alternate;
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    font-size: 60px;
+    color: #ff2ea6;
+    text-shadow: 0 0 25px #ff2ea6;
+    margin-bottom: 30px;
+}
+
+p {
+    color: #8cff00;
+    margin-bottom: 50px;
+    font-size: 16px;
+}
+
+.button {
+    color: white;
+    text-decoration: none;
+    border: 3px solid #ff2ea6;
+    padding: 18px 40px;
+    transition: .3s;
+}
+
+.button:hover {
+    background: #ff2ea6;
+    box-shadow: 0 0 25px #ff2ea6;
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.08);
+    }
+}
