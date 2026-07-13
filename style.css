@@ -12,8 +12,6 @@ body{
     overflow-x:hidden;
 }
 
-/* BACKGROUND */
-
 .bg-grid{
     position:fixed;
     inset:0;
@@ -33,90 +31,8 @@ body{
 
     background:
     radial-gradient(circle at center,
-    rgba(255,0,170,.18),
+    rgba(255,0,170,.15),
     transparent 60%);
-}
-
-/* HERO */
-
-.hero{
-
-    height:100vh;
-
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-
-    text-align:center;
-
-    padding:20px;
-
-}
-
-.penguin{
-
-    width:190px;
-
-    margin-bottom:40px;
-
-    image-rendering:pixelated;
-
-}
-
-h1{
-
-    font-family:'Press Start 2P',cursive;
-
-    font-size:56px;
-
-    color:#ff66dd;
-
-    text-shadow:
-    4px 4px #5d007d;
-
-    margin-bottom:30px;
-
-}
-
-.subtitle{
-
-    color:#d5b6ff;
-
-    margin-bottom:50px;
-
-    letter-spacing:2px;
-
-}
-
-.btn{
-
-    display:inline-block;
-
-    padding:18px 42px;
-
-    border:4px solid #ff66dd;
-
-    background:#23112f;
-
-    color:white;
-
-    text-decoration:none;
-
-    font-family:'Press Start 2P',cursive;
-
-    transition:.25s;
-
-}
-
-.btn:hover{
-
-    background:#ff44cc;
-
-    box-shadow:0 0 20px #ff44cc;
-
-    transform:translateY(-4px);
-
 }
 
 /* TOP BAR */
@@ -141,15 +57,15 @@ h1{
 
 }
 
-/* LAB */
+/* PAGE */
 
 .lab{
 
-    max-width:1300px;
+    max-width:1200px;
 
     margin:auto;
 
-    padding:40px 30px 100px;
+    padding:40px 25px 100px;
 
 }
 
@@ -163,7 +79,7 @@ h1{
 
     margin-bottom:50px;
 
-    font-size:28px;
+    font-size:26px;
 
 }
 
@@ -173,7 +89,7 @@ h1{
 
     display:grid;
 
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 
     gap:30px;
 
@@ -183,13 +99,11 @@ h1{
 
     background:#12081c;
 
-    border:3px solid #ff66dd;
+    border:1px solid #2b2037;
 
     border-radius:18px;
 
     padding:30px;
-
-    text-align:center;
 
     transition:.25s;
 
@@ -197,21 +111,23 @@ h1{
 
 .card:hover{
 
-    transform:translateY(-8px);
+    transform:translateY(-6px);
 
-    box-shadow:0 0 30px rgba(255,68,204,.5);
+    border-color:#ff66dd;
+
+    box-shadow:0 0 25px rgba(255,68,204,.25);
 
 }
 
 .avatar{
 
-    width:120px;
+    width:90px;
 
-    height:120px;
-
-    margin:0 auto 25px;
+    height:90px;
 
     display:block;
+
+    margin:0 auto 20px;
 
     border-radius:50%;
 
@@ -223,107 +139,150 @@ h1{
 
 .card h3{
 
-    font-family:'Press Start 2P',cursive;
+    text-align:center;
 
-    font-size:16px;
+    font-family:'Press Start 2P',cursive;
 
     color:#ff66dd;
 
-    margin-bottom:25px;
+    font-size:15px;
+
+    margin-bottom:18px;
 
 }
 
+.description{
+
+    text-align:center;
+
+    color:#9e9e9e;
+
+    font-size:14px;
+
+    line-height:1.7;
+
+    margin-bottom:28px;
+
+}
 /* STATS */
 
 .stats{
 
-    text-align:left;
+    display:flex;
 
-    margin-bottom:25px;
+    flex-direction:column;
+
+    gap:12px;
+
+    margin-bottom:28px;
 
 }
 
-.stats p{
+.stat{
 
     display:flex;
 
     justify-content:space-between;
 
-    margin-bottom:10px;
+    align-items:center;
 
-    color:#ddd;
+    padding-bottom:10px;
 
-}
-
-.stats span{
-
-    color:#999;
+    border-bottom:1px solid rgba(255,255,255,.05);
 
 }
 
-/* STATUS */
+.stat:last-child{
 
-.status{
+    border-bottom:none;
 
-    display:inline-block;
+}
 
-    padding:10px 16px;
+.stat span{
 
-    border-radius:50px;
+    color:#888;
+
+    font-size:13px;
+
+}
+
+.stat strong{
+
+    color:white;
+
+    font-size:14px;
 
     font-weight:600;
 
-    margin-bottom:25px;
+}
+
+/* AI METRICS */
+
+.metrics{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:12px;
+
+    margin-bottom:28px;
 
 }
 
-.active{
+.metrics div{
 
-    background:#163b22;
+    background:#0d0815;
 
-    color:#5dff95;
+    border:1px solid #2b2037;
 
-}
+    border-radius:10px;
 
-.trend{
+    padding:12px 8px;
 
-    background:#4d2d00;
-
-    color:#ffc247;
+    text-align:center;
 
 }
 
-.viral{
+.metrics span{
 
-    background:#3b1647;
+    display:block;
 
-    color:#ff80ff;
+    color:#777;
+
+    font-size:11px;
+
+    margin-bottom:6px;
 
 }
 
-.grow{
+.metrics strong{
 
-    background:#08304d;
+    color:#ff66dd;
 
-    color:#70d8ff;
+    font-size:13px;
 
 }
 
 /* BUTTON */
 
-.view-btn{
+.analyze-btn{
 
     display:block;
 
     width:100%;
 
-    padding:14px;
+    text-align:center;
+
+    padding:16px;
 
     border:2px solid #ff66dd;
 
-    color:white;
+    border-radius:10px;
 
     text-decoration:none;
+
+    color:white;
 
     font-family:'Press Start 2P',cursive;
 
@@ -333,8 +292,128 @@ h1{
 
 }
 
-.view-btn:hover{
+.analyze-btn:hover{
 
     background:#ff44cc;
+
+    box-shadow:0 0 20px rgba(255,68,204,.35);
+
+    transform:translateY(-2px);
+
+}
+
+/* ABOUT */
+
+.about{
+
+    margin-top:90px;
+
+}
+
+.about h2{
+
+    margin-bottom:30px;
+
+}
+
+.about p{
+
+    max-width:760px;
+
+    margin:auto;
+
+    color:#b7b7b7;
+
+    line-height:1.9;
+
+    text-align:center;
+
+}
+
+/* CONTACT */
+
+.contact{
+
+    margin-top:80px;
+
+    text-align:center;
+
+}
+
+.contact h2{
+
+    margin-bottom:30px;
+
+}
+
+.contact a{
+
+    display:inline-block;
+
+    color:#ff66dd;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    font-size:18px;
+
+    transition:.25s;
+
+}
+
+.contact a:hover{
+
+    color:white;
+
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.lab{
+
+    padding:30px 18px 80px;
+
+}
+
+.lab h2{
+
+    font-size:18px;
+
+}
+
+.card{
+
+    padding:22px;
+
+}
+
+.avatar{
+
+    width:72px;
+
+    height:72px;
+
+}
+
+.card h3{
+
+    font-size:13px;
+
+}
+
+.metrics{
+
+    grid-template-columns:1fr;
+
+}
+
+.analyze-btn{
+
+    font-size:10px;
+
+}
 
 }
