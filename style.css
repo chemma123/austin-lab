@@ -123,7 +123,7 @@ h1{
 
 .topbar{
 
-    padding:35px;
+    padding:40px 0;
 
     text-align:center;
 
@@ -145,23 +145,25 @@ h1{
 
 .lab{
 
-    max-width:1100px;
+    max-width:1300px;
 
     margin:auto;
 
-    padding:60px 20px 120px;
+    padding:40px 30px 100px;
 
 }
 
 .lab h2{
 
+    text-align:center;
+
     font-family:'Press Start 2P',cursive;
 
     color:#ff66dd;
 
-    margin-bottom:40px;
+    margin-bottom:50px;
 
-    font-size:24px;
+    font-size:28px;
 
 }
 
@@ -173,25 +175,21 @@ h1{
 
     grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
 
-    gap:28px;
-
-    margin-bottom:90px;
+    gap:30px;
 
 }
 
 .card{
 
-    display:block;
-
-    padding:30px;
-
-    text-decoration:none;
-
-    color:white;
+    background:#12081c;
 
     border:3px solid #ff66dd;
 
-    background:#12081c;
+    border-radius:18px;
+
+    padding:30px;
+
+    text-align:center;
 
     transition:.25s;
 
@@ -199,9 +197,27 @@ h1{
 
 .card:hover{
 
-    transform:translateY(-6px);
+    transform:translateY(-8px);
 
-    box-shadow:0 0 25px #ff44cc;
+    box-shadow:0 0 30px rgba(255,68,204,.5);
+
+}
+
+.avatar{
+
+    width:120px;
+
+    height:120px;
+
+    margin:0 auto 25px;
+
+    display:block;
+
+    border-radius:50%;
+
+    background:white;
+
+    padding:10px;
 
 }
 
@@ -209,54 +225,116 @@ h1{
 
     font-family:'Press Start 2P',cursive;
 
-    margin-bottom:20px;
-
     font-size:16px;
 
-}
+    color:#ff66dd;
 
-.card p{
-
-    color:#d8d8d8;
+    margin-bottom:25px;
 
 }
 
-/* ABOUT */
+/* STATS */
 
-.about{
+.stats{
 
-    margin-bottom:90px;
+    text-align:left;
+
+    margin-bottom:25px;
 
 }
 
-.about p{
+.stats p{
 
-    max-width:700px;
+    display:flex;
 
-    line-height:1.9;
+    justify-content:space-between;
+
+    margin-bottom:10px;
 
     color:#ddd;
 
 }
 
-/* CONTACT */
+.stats span{
 
-.contact a{
-
-    display:inline-block;
-
-    margin-right:30px;
-
-    color:#ff66dd;
-
-    text-decoration:none;
-
-    font-weight:600;
+    color:#999;
 
 }
 
-.contact a:hover{
+/* STATUS */
+
+.status{
+
+    display:inline-block;
+
+    padding:10px 16px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    margin-bottom:25px;
+
+}
+
+.active{
+
+    background:#163b22;
+
+    color:#5dff95;
+
+}
+
+.trend{
+
+    background:#4d2d00;
+
+    color:#ffc247;
+
+}
+
+.viral{
+
+    background:#3b1647;
+
+    color:#ff80ff;
+
+}
+
+.grow{
+
+    background:#08304d;
+
+    color:#70d8ff;
+
+}
+
+/* BUTTON */
+
+.view-btn{
+
+    display:block;
+
+    width:100%;
+
+    padding:14px;
+
+    border:2px solid #ff66dd;
 
     color:white;
+
+    text-decoration:none;
+
+    font-family:'Press Start 2P',cursive;
+
+    font-size:11px;
+
+    transition:.25s;
+
+}
+
+.view-btn:hover{
+
+    background:#ff44cc;
 
 }
