@@ -1,67 +1,101 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
-body {
-    background: #050505;
-    color: white;
-    font-family: "Press Start 2P", monospace;
-    overflow: hidden;
+body{
+
+background:#070707;
+color:white;
+font-family:Inter,sans-serif;
+
 }
 
-.background {
-    position: fixed;
-    inset: 0;
-    background:
-        radial-gradient(circle at top, rgba(255,46,166,.15), transparent 40%),
-        radial-gradient(circle at bottom, rgba(140,255,0,.12), transparent 40%);
-    animation: pulse 6s infinite alternate;
+.hero{
+
+height:100vh;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+text-align:center;
+
+padding:40px;
+
 }
 
-.container {
-    position: relative;
-    z-index: 2;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.content{
+
+max-width:900px;
+
 }
 
-h1 {
-    font-size: 60px;
-    color: #ff2ea6;
-    text-shadow: 0 0 25px #ff2ea6;
-    margin-bottom: 30px;
+.tag{
+
+display:inline-block;
+
+padding:8px 16px;
+
+border:1px solid rgba(255,255,255,.15);
+
+border-radius:999px;
+
+color:#8f8f8f;
+
+font-size:14px;
+
+margin-bottom:30px;
+
 }
 
-p {
-    color: #8cff00;
-    margin-bottom: 50px;
-    font-size: 16px;
+h1{
+
+font-size:92px;
+
+font-weight:800;
+
+letter-spacing:-3px;
+
 }
 
-.button {
-    color: white;
-    text-decoration: none;
-    border: 3px solid #ff2ea6;
-    padding: 18px 40px;
-    transition: .3s;
+p{
+
+margin-top:25px;
+
+font-size:22px;
+
+color:#9d9d9d;
+
+line-height:1.7;
+
 }
 
-.button:hover {
-    background: #ff2ea6;
-    box-shadow: 0 0 25px #ff2ea6;
+.button{
+
+display:inline-block;
+
+margin-top:45px;
+
+padding:18px 34px;
+
+background:white;
+
+color:black;
+
+text-decoration:none;
+
+border-radius:14px;
+
+font-weight:700;
+
+transition:.25s;
+
 }
 
-@keyframes pulse {
-    from {
-        transform: scale(1);
-    }
-    to {
-        transform: scale(1.08);
-    }
+.button:hover{
+
+transform:translateY(-3px);
+
 }
